@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Dieye Tine</title>
+    <link rel="stylesheet" href="stayle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init('TPjOgHSffn71RhF-8'); // Remplace par ta clé
+</script>
+</head>
+<body> 
+    <div id="loading-screen">
+  <div class="loading-content">
+    <i class="fa-solid fa-laptop-code fa-5x main-icon hidden"></i>
+
+    <h1 id="loading-text" class="hidden">MY PROFILE</h1>
+
+    <div class="sub-icons">
+      <i class="fa-brands fa-github fa-2x hidden"></i>
+      <i class="fa-solid fa-code fa-2x hidden"></i>
+      <i class="fa-solid fa-user fa-2x hidden"></i>
+    </div>
+
+    <h2 id="designer-text" class="hidden">Designed by Mohamed</h2>
+  </div>
+</div>
+<header class="header-list">
+    <div class="div-list">
+        <!-- Navigation -->
+        <ul class="ul-list">
+            <li class="active">
+                <i class="fa-regular fa-house"></i>
+                <a href="#home" data-en="Home" data-fr="Accueil">Home</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-address-card"></i>
+                <a href="#about" data-en="About" data-fr="À propos">About</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-folder-open"></i>
+                <a href="#project" data-en="Projects" data-fr="Projets">Projects</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-code"></i>
+                <a href="#services" data-en="Services" data-fr="Services">Services</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+            </li>
+        </ul>
+
+        <!-- CONTRÔLES (Langue + Thème) -->
+        <div class="controls">
+            <!-- Switch Langue FR/EN -->
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="en">🇬🇧</button>
+                <button class="lang-btn active" data-lang="fr">🇫🇷</button>
+            </div>
+
+            <!-- Switch Thème Clair/Sombre -->
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+</header>
+    <!-- home -->
+    <section class="home" id="home">
+    <p class="home-p" data-en="Available for freelance work" data-fr="Disponible pour du freelance">
+        <span class="home-s">. </span>Available for freelance work
+    </p>
+    <div class="home-container">
+        <div class="home-section">
+            <div class="info-home">
+                <h1 data-en="Hi, I'm Mohamed" data-fr="Salut, je suis Mohamed">Hi, I'm Mohamed</h1>
+                <h3>Frontend Developer and Designer</h3>
+                <div class="info-p">
+                   <p data-en="I create beautiful, functional, and user-centered digital experiences. With 2+ years of experience in web development, I bring ideas to life through clean code and thoughtful design" 
+                      data-fr="Je crée des expériences numériques belles, fonctionnelles et centrées sur l'utilisateur. Avec plus de 2 ans d'expérience en développement web, je donne vie aux idées grâce à un code propre et un design réfléchi">
+                       I create beautiful, functional, and user-centered digital experiences. With 2+ years of experience in web development, I bring ideas to life through clean code and thoughtful design
+                   </p>
+                </div>
+                <div class="info-p2">
+                    <p data-en="Based in Senegal" data-fr="Basé au Sénégal">
+                        <i class="fa-solid fa-location-dot"></i> Based in Senegal
+                    </p>
+                    <p data-en="Available Now" data-fr="Disponible maintenant">
+                        <i class="fa-solid fa-briefcase"></i> Available Now
+                    </p>
+                </div>
+                <div class="btnn">
+                    <button class="btn-home1" data-en="Hire Me" data-fr="Engagez-moi">
+                        <i class="fa-solid fa-arrow-right"></i> Hire Me
+                    </button>
+                    <button class="btn-home2" data-en="Download CV" data-fr="Télécharger CV">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </button>
+                </div>
+                <div class="hhr"><hr></div>
+                <div class="follow">
+                    <p class="followw" data-en="Follow me:" data-fr="Suivez-moi :">Follow me:</p>
+                       <ul>
+                        <li><a href="https://github.com/mohamedtine1975-droid"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mohamed-dieye-tine-81b509395?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/ur_mohameddd?igsh=MXZpNmZ1c3c2Z2FvdA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="images/image.jpg" alt="">
+    </div>
+</section>
+    <!-- fine home  -->
+    <section class="about" id="about">
+    <p data-en="ABOUT ME" data-fr="À PROPOS DE MOI">ABOUT ME</p>
+    
+    <div class="title">
+        <h1 data-en="Building Meaningful" data-fr="Créer des Expériences">Building Meaningful</h1>
+        <h1 data-en="Digital Experiences" data-fr="Numériques Significatives">Digital Experiences</h1>
+    </div>
+    
+    <div class="hrrr">
+        <hr>
+    </div>
+    
+    <div class="about-container">
+        <div class="info-about">
+            <div class="about-info">
+                <p data-en="I'm a creative front-end developer passionate about building modern and responsive web experiences. My journey began with a love for design and evolved into a deep curiosity for how the web works — combining logic with creativity to bring ideas to life." 
+                   data-fr="Je suis un développeur front-end créatif passionné par la création d'expériences web modernes et responsives. Mon parcours a commencé par un amour du design et a évolué vers une profonde curiosité sur le fonctionnement du web — alliant logique et créativité pour donner vie aux idées.">
+                    I'm a creative front-end developer passionate about building modern and responsive web experiences.
+                    <br>My journey began with a love for design and evolved into a deep curiosity for how the web works — combining <br> logic with creativity to bring ideas to life.
+                </p>
+                <p data-en="When I'm not coding, I enjoy learning new technologies, improving my projects, and exploring better ways to make the web faster and more engaging. I believe in continuous learning, attention to detail, and the power of clean, meaningful design." 
+                   data-fr="Quand je ne code pas, j'aime apprendre de nouvelles technologies, améliorer mes projets et explorer de meilleures façons de rendre le web plus rapide et engageant. Je crois en l'apprentissage continu, l'attention aux détails et le pouvoir d'un design propre et significatif.">
+                    When I'm not coding, I enjoy learning new technologies, improving my projects, <br> and exploring better ways to make the web faster and more engaging.
+                    <br>I believe in continuous learning, attention to detail, and the power of clean, meaningful design
+                </p>
+            </div>
+            
+            <h2 data-en="What Drives Me" data-fr="Ce Qui Me Motive">What Drives Me</h2>
+            
+            <div class="card">
+                <div class="c1">
+                    <h3><i class="fa-solid fa-code"></i> <span data-en="Languages" data-fr="Langages">Languages</span></h3>
+                    <p>HTML, CSS, JavaScript, C++, C, Node</p>
+                </div>
+                <div class="c1">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> <span data-en="Education" data-fr="Formation">Education</span></h3>
+                    <p data-en="Bachelor Degree" data-fr="Licence">Bachelor Degree</p>
+                </div>
+                <div class="c1">
+                    <h3><i class="fa-solid fa-folder-open"></i> <span data-en="Projects" data-fr="Projets">Projects</span></h3>
+                    <p data-en="Built more than 5 projects" data-fr="Plus de 5 projets réalisés">Built more than 5 projects</p>
+                </div>
+            </div>
+        </div>
+        <img src="images/image.jpg" alt="Mohamed Tine">
+    </div>
+</section>
+   <section class="project" id="project">
+    <p data-en="PROJECTS" data-fr="PROJETS">PROJECTS</p>
+    <h1 data-en="Featured Work" data-fr="Travaux Sélectionnés">Featured Work</h1>
+    <hr>
+    <div class="info-pro">
+        <p data-en="A showcase of my recent projects demonstrating expertise in full-stack development, modern frameworks, and creative problem-solving." 
+           data-fr="Une vitrine de mes projets récents démontrant mon expertise en développement full-stack, frameworks modernes et résolution créative de problèmes.">
+            A showcase of my recent projects demonstrating expertise in full-stack development, modern frameworks, and creative problem-solving.
+        </p>
+    </div>
+    <div class="projects-container">
+
+        <!-- Projet 1: E-Commerce -->
+        <div class="project-card">
+            <img src="images/Cleveroad.jpg" alt="E-Commerce Website">
+            <h3 data-en="E-Commerce Website" data-fr="Site E-Commerce">E-Commerce Website</h3>
+            <p data-en="Modern online store with product filtering, shopping cart, and secure payment system." 
+               data-fr="Boutique en ligne moderne avec filtrage de produits, panier d'achat et système de paiement sécurisé.">
+                Modern online store with product filtering, shopping cart, and secure payment system.
+            </p>
+            <div class="skills">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn"><i class="fab fa-github"></i> <span data-en="GitHub" data-fr="GitHub">GitHub</span></a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> <span data-en="Live Demo" data-fr="Démo en Direct">Live Demo</span></a>
+            </div>
+        </div>
+
+        <!-- Projet 2: Portfolio -->
+        <div class="project-card">
+            <img src="images/landing.jpg" alt="Portfolio Website">
+            <h3 data-en="Portfolio Website" data-fr="Site Portfolio">Portfolio Website</h3>
+            <p data-en="Personal portfolio showcasing design and coding projects with modern animations." 
+               data-fr="Portfolio personnel présentant des projets de design et de code avec animations modernes.">
+                Personal portfolio showcasing design and coding projects with modern animations.
+            </p>
+            <div class="skills">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">Bootstrap</a>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn"><i class="fab fa-github"></i> <span data-en="GitHub" data-fr="GitHub">GitHub</span></a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> <span data-en="Live Demo" data-fr="Démo en Direct">Live Demo</span></a>
+            </div>
+        </div>
+
+        <!-- Projet 3: Weather App -->
+        <div class="project-card">
+            <img src="images/Weather Forecast Dashboard.jpg" alt="Weather App">
+            <h3 data-en="Weather App" data-fr="Application Météo">Weather App</h3>
+            <p data-en="Responsive weather application displaying real-time data through API integration." 
+               data-fr="Application météo responsive affichant les données en temps réel via intégration API.">
+                Responsive weather application displaying real-time data through API integration.
+            </p>
+            <div class="skills">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">API</a>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn"><i class="fab fa-github"></i> <span data-en="GitHub" data-fr="GitHub">GitHub</span></a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> <span data-en="Live Demo" data-fr="Démo en Direct">Live Demo</span></a>
+            </div>
+        </div>
+
+        <!-- Projet 4: Blog -->
+        <div class="project-card">
+            <img src="images/WordPress dashboard design concept.jpg" alt="Blog Website">
+            <h3 data-en="Blog Website" data-fr="Site de Blog">Blog Website</h3>
+            <p data-en="Clean and simple blogging platform with markdown support and content management." 
+               data-fr="Plateforme de blog épurée et simple avec support markdown et gestion de contenu.">
+                Clean and simple blogging platform with markdown support and content management.
+            </p>
+            <div class="skills">
+                <a href="#">HTML</a>
+                <a href="#">Tailwind</a>
+                <a href="#">JavaScript</a>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn"><i class="fab fa-github"></i> <span data-en="GitHub" data-fr="GitHub">GitHub</span></a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> <span data-en="Live Demo" data-fr="Démo en Direct">Live Demo</span></a>
+            </div>
+        </div>
+
+        <!-- Projet 5: Game Landing -->
+        <div class="project-card">
+            <img src="images/Game Dashboard Design.jpg" alt="Game Landing Page">
+            <h3 data-en="Game Landing Page" data-fr="Page de Jeu">Game Landing Page</h3>
+            <p data-en="Immersive landing page for a game featuring smooth animations and parallax effects." 
+               data-fr="Page d'accueil immersive pour un jeu avec animations fluides et effets parallax.">
+                Immersive landing page for a game featuring smooth animations and parallax effects.
+            </p>
+            <div class="skills">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">GSAP</a>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn"><i class="fab fa-github"></i> <span data-en="GitHub" data-fr="GitHub">GitHub</span></a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> <span data-en="Live Demo" data-fr="Démo en Direct">Live Demo</span></a>
+            </div>
+        </div>
+
+        <!-- Projet 6: Task Manager -->
+        <div class="project-card">
+            <img src="images/Task manager app.jpg" alt="Task Manager">
+            <h3 data-en="Task Manager" data-fr="Gestionnaire de Tâches">Task Manager</h3>
+            <p data-en="Task tracking web application with full CRUD operations and intuitive interface." 
+               data-fr="Application web de gestion de tâches avec opérations CRUD complètes et interface intuitive.">
+                Task tracking web application with full CRUD operations and intuitive interface.
+            </p>
+            <div class="skills">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JS</a>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn"><i class="fab fa-github"></i> <span data-en="GitHub" data-fr="GitHub">GitHub</span></a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> <span data-en="Live Demo" data-fr="Démo en Direct">Live Demo</span></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <section class="services" id="services">
+    <p data-en="SERVICES" data-fr="SERVICES">SERVICES</p>
+    <h1 data-en="Our Features & Services" data-fr="Nos Fonctionnalités & Services">Our Features & Services</h1>
+    <hr>
+    <div class="services-container">
+
+        <!-- Service 1: Web Development -->
+        <div class="service-card">
+            <img src="images/web.svg" alt="Web Development">
+            <h3 data-en="Web Development" data-fr="Développement Web">Web Development</h3>
+            <p data-en="Creation of modern, responsive and optimized websites using the latest technologies. From design to deployment, I build complete web solutions tailored to your needs." 
+               data-fr="Création de sites web modernes, responsives et optimisés utilisant les dernières technologies. Du design au déploiement, je construis des solutions web complètes adaptées à vos besoins.">
+                Creation of modern, responsive and optimized websites using the latest technologies. From design to deployment, I build complete web solutions tailored to your needs.
+            </p>
+        </div>
+
+        <!-- Service 2: App Development -->
+        <div class="service-card">
+            <img src="images/app.svg" alt="App Development">
+            <h3 data-en="App Development" data-fr="Développement d'Applications">App Development</h3>
+            <p data-en="Development of interactive web applications with intuitive interfaces. I create powerful solutions that combine performance, security and exceptional user experience." 
+               data-fr="Développement d'applications web interactives avec des interfaces intuitives. Je crée des solutions puissantes qui allient performance, sécurité et expérience utilisateur exceptionnelle.">
+                Development of interactive web applications with intuitive interfaces. I create powerful solutions that combine performance, security and exceptional user experience.
+            </p>
+        </div>
+
+        <!-- Service 4: Graphic Design -->
+        <div class="service-card">
+            <img src="images/seo.svg" alt="Graphic Design">
+            <h3 data-en="Graphic Design" data-fr="Design Graphique">Graphic Design</h3>
+            <p data-en="Creation of logos, flyers, posters and all your graphic materials. I design unique visual identities that capture the essence of your brand and leave a lasting impression." 
+               data-fr="Création de logos, flyers, affiches et tous vos supports graphiques. Je conçois des identités visuelles uniques qui capturent l'essence de votre marque et laissent une impression durable.">
+                Creation of logos, flyers, posters and all your graphic materials. I design unique visual identities that capture the essence of your brand and leave a lasting impression.
+            </p>
+        </div>
+
+    </div>
+</section>
+    <section class="contact" id="contact">
+    <p data-en="CONTACT" data-fr="CONTACT">CONTACT</p>
+    <h1 data-en="Get in Touch with Us" data-fr="Entrons en Contact">Get in Touch with Us</h1>
+    
+    <div class="contact-content">
+        <div class="contact-info slide-in-left">
+            <p data-en="I'm always open to discuss exciting projects and new opportunities. Let's collaborate!" 
+               data-fr="Je suis toujours ouvert pour discuter de projets passionnants et de nouvelles opportunités. Collaborons ensemble !">
+                I'm always open to discuss exciting projects and new opportunities. Let's collaborate!
+            </p>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>mohamedtine1975@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+221 76 021 93 52</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span data-en="Senegal, Rufisque" data-fr="Sénégal, Rufisque">Senegal, Rufisque</span>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/mohamedtine1975-droid" class="social-link" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-dieye-tine-81b509395" class="social-link" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/221760219352" class="social-link" target="_blank" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-form slide-in-right">
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" 
+                           placeholder="Your Name" 
+                           data-placeholder-en="Your Name" 
+                           data-placeholder-fr="Votre Nom"
+                           required 
+                           name="user_name">
+                </div>
+                <div class="form-group">
+                    <input type="email" 
+                           placeholder="Your Email" 
+                           data-placeholder-en="Your Email" 
+                           data-placeholder-fr="Votre Email"
+                           required 
+                           name="user_email">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" 
+                              placeholder="Your Message" 
+                              data-placeholder-en="Your Message" 
+                              data-placeholder-fr="Votre Message"
+                              rows="5" 
+                              required></textarea>
+                </div>
+                <button type="submit" class="btn-send" data-en="Send Message" data-fr="Envoyer le Message">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <h2 class="footer-logo">Mohamed</h2>
+        
+        <ul class="footer-links">
+            <li><a href="#home" data-en="Home" data-fr="Accueil">Home</a></li>
+            <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
+            <li><a href="#project" data-en="Projects" data-fr="Projets">Projects</a></li>
+            <li><a href="#services" data-en="Services" data-fr="Services">Services</a></li>
+            <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+        </ul>
+        
+        <div class="footer-social">
+            <a href="https://github.com/mohamedtine1975-droid" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-dieye-tine-81b509395" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/221760219352" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        <p class="footer-copy" data-en="&copy; 2025 Mohamed Tine. All Rights Reserved." data-fr="&copy; 2025 Mohamed Tine. Tous droits réservés.">
+            &copy; 2025 Mohamed Tine. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+     <script src="main.js"></script>
+</body>
+</html>
